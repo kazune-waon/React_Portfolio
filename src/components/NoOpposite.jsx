@@ -32,6 +32,7 @@ export default function NoOpposite() {
           <TimelineDot />
         </TimelineSeparator>
         <TimelineContent>東北学院大学</TimelineContent>
+        
       </TimelineItem>
     </Timeline>
   );

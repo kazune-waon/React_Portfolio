@@ -61,6 +61,8 @@ export default function BasicTabs() {
       <h1>KAZUNE FUJIWARA</h1>
       <h2>ABOUT ME</h2>
       <BasicGrid />
+      <h2>SKILL</h2>
+      <BasicRating />
       <h2>EXPERIENCE</h2>
       <NoOpposite />
       </CustomTabPanel>

@@ -12,20 +12,19 @@ export default function BasicRating() {
         '& > legend': { mt: 2 },
       }}
     >
-      <Typography component="legend">Controlled</Typography>
-      <Rating
-        name="simple-controlled"
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      />
-      <Typography component="legend">Read only</Typography>
-      <Rating name="read-only" value={value} readOnly />
-      <Typography component="legend">Disabled</Typography>
-      <Rating name="disabled" value={value} disabled />
-      <Typography component="legend">No rating given</Typography>
-      <Rating name="no-value" value={null} />
+
+      
+      
+      <Typography component="legend">HTML/CSS</Typography>
+      <Rating name="read-only" value={2} readOnly />
+      <Typography component="legend">JavaScript</Typography>
+      <Rating name="read-only" value={1} readOnly />
+      <Typography component="legend">React</Typography>
+      <Rating name="read-only" value={1} readOnly />
+      <Typography component="legend">Java</Typography>
+      <Rating name="read-only" value={2} readOnly />
+      <Typography component="legend">Python</Typography>
+      <Rating name="read-only" value={2} readOnly />
     </Box>
   );
 }

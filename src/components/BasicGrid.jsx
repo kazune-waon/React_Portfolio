@@ -17,20 +17,22 @@ export default function BasicGrid() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={5}>
-          <Item><img src="https://via.placeholder.com/150"/></Item>
-        </Grid>
-        <Grid item xs={7}>
-          <Item>あああああああああああああああああかかかか
-            ああああああああああああああああああああああ
-            ああああああああああああああああああああああ
+          <Item>
+            <img src="https://via.placeholder.com/150" style={{ width: '100%' }}/>
           </Item>
         </Grid>
-        <Grid item xs={4}>
-          <Item>xs=4</Item>
+        <Grid item xs={7}>
+          <Item>
+            <html>大学では広く情報分野をまなび、ネットワークや情報倫理、プログラミングなどを学ぶ。
+            在学中に参加したスマホアプリのコンテストではJavaを使用し、
+            卒業研究では主にArduinoとPythonを用いたシステム作成を行った。<br/><br/></html>
+            昔からクリエイティブなことが好きで多くの人が目にするであろうWebの業界で仕事がしたい！
+            という思いから、現在はWeb系の会社に属している。
+            <br/><br/>
+            今後はより広いエンジニアスキルを身に着けながらUXデザインの学習も行いたい。
+          </Item>
         </Grid>
-        <Grid item xs={8}>
-          <Item>xs=8</Item>
-        </Grid>
+
       </Grid>
     </Box>
   );
