@@ -5,6 +5,8 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TitleImageList from './TitleImageList';
 import BasicRating from './BasicRating';
+import NoOpposite from './NoOpposite';
+import BasicGrid from './BasicGrid';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,19 +47,29 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', width:'100%' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs value={value} 
+        onChange={handleChange} 
+        aria-label="basic tabs example"
+        variant="fullWidth"
+        >
           <Tab label="Item One" {...a11yProps(0)} />
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        
+      <h1>KAZUNE FUJIWARA</h1>
+      <h2>ABOUT ME</h2>
+      <BasicGrid />
+      <h2>EXPERIENCE</h2>
+      <NoOpposite />
       </CustomTabPanel>
+
       <CustomTabPanel value={value} index={1}>
       <TitleImageList />
       <BasicRating />
       </CustomTabPanel>
+
       <CustomTabPanel value={value} index={2}>
         Item Three
       </CustomTabPanel>
