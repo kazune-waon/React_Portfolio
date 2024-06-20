@@ -18,18 +18,20 @@ export default function BasicGrid() {
       <Grid container spacing={2}>
         <Grid item xs={5}>
           <Item>
-            <img src="https://via.placeholder.com/150" style={{ width: '100%' }}/>
+            <img src="../../public/Image/plofile.jpeg" style={{ width: '80%' }}/>
           </Item>
         </Grid>
         <Grid item xs={7}>
           <Item>
-            <html>大学では広く情報分野をまなび、ネットワークや情報倫理、プログラミングなどを学ぶ。
-            在学中に参加したスマホアプリのコンテストではJavaを使用し、
-            卒業研究では主にArduinoとPythonを用いたシステム作成を行った。<br/><br/></html>
+            <html>社会人歴1年目のひよっこエンジニアです。<br/>
+            大学では広く情報分野をまなび、ネットワークや情報倫理、プログラミングなどを学びました。
+            在学中はスマホアプリのコンテストに参加したり、卒業研究で絵本のシステムをつくりました。
+           
+           <br/><br/></html>
             昔からクリエイティブなことが好きで多くの人が目にするであろうWebの業界で仕事がしたい！
-            という思いから、現在はWeb系の会社に属している。
+            という思いから、現在はWeb系の会社に属しています。
             <br/><br/>
-            今後はより広いエンジニアスキルを身に着けながらUXデザインの学習も行いたい。
+            今後はより広いエンジニアスキルを身に着けながらUXデザインの学習も行いたいと考えています！
           </Item>
         </Grid>
 

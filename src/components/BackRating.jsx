@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 
-export default function BasicRating() {
+export default function BackRating() {
   const [value, setValue] = React.useState(2);
 
   return (
@@ -13,18 +13,15 @@ export default function BasicRating() {
       }}
     >
 
+      <html><h3>バックエンド</h3></html>
       
+     
       
-      <Typography component="legend">HTML/CSS</Typography>
-      <Rating name="read-only" value={2} readOnly />
-      <Typography component="legend">JavaScript</Typography>
-      <Rating name="read-only" value={1} readOnly />
-      <Typography component="legend">React</Typography>
-      <Rating name="read-only" value={1} readOnly />
       <Typography component="legend">Java</Typography>
       <Rating name="read-only" value={2} readOnly />
       <Typography component="legend">Python</Typography>
       <Rating name="read-only" value={2} readOnly />
+      <html><br/><br/><br/></html>
     </Box>
   );
 }

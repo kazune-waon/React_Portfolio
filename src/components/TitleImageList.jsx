@@ -27,34 +27,30 @@ export default function TitleImageList() {
 
 const itemData = [
   {
-    img: 'https://github.com/kazune-waon/React_Portfolio/blob/main/src/Image/AndroidApp.jpg?raw=true',
-    title: 'AndroidApp',
+    img: '../../public/Image/AndroidApp.jpg',
+    title: 'Androidアプリケーション',
     author: '@bkristastucchio',
   },
   {
-    img: 'https://github.com/kazune-waon/React_Portfolio/blob/main/src/Image/Glasritzen-sendai_about.png?raw=true',
-    title: 'Webpage prototype',
+    img: '../../public/Image/Glasritzen-sendai_about.png',
+    title: 'Webページリニューアルのためのプロトタイプ',
     author: '@rollelflex_graphy726',
   },
   {
-    img: 'https://github.com/kazune-waon/React_Portfolio/blob/main/src/Image/WeatherApp.jpg?raw=true',
-    title: 'WeatherApp',
+    img: '../../public/Image/WeatherApp.jpg',
+    title: '天気予報Webアプリ',
     author: '@helloimnik',
   },
   {
-    img: 'https://github.com/kazune-waon/React_Portfolio/blob/main/src/Image/album_desktop.png?raw=true',
-    title: 'AlbumPage',
+    img: '../../public/Image/album_desktop.png',
+    title: 'アルバムの紹介ページ',
     author: '@nolanissac',
   },
   {
-    img: 'https://github.com/kazune-waon/React_Portfolio/blob/main/src/Image/Graduation_System.jpg?raw=true',
-    title: 'Graduation System',
+    img: '../../public/Image/Graduation_System.jpg',
+    title: '卒業研究',
     author: '@hjrc33',
   },
-  {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-    author: '@arwinneil',
-  },
+ 
   
 ];

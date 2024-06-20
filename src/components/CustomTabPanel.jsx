@@ -4,9 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TitleImageList from './TitleImageList';
-import BasicRating from './BasicRating';
+import BasicRating from './BackRating';
 import NoOpposite from './NoOpposite';
 import BasicGrid from './BasicGrid';
+import SkillGrid from './SkillGrid';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,14 +63,13 @@ export default function BasicTabs() {
       <h2>ABOUT ME</h2>
       <BasicGrid />
       <h2>SKILL</h2>
-      <BasicRating />
+      <SkillGrid />
       <h2>EXPERIENCE</h2>
       <NoOpposite />
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
       <TitleImageList />
-      <BasicRating />
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
