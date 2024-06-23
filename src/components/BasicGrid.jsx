@@ -18,7 +18,7 @@ export default function BasicGrid() {
       <Grid container spacing={2}>
         <Grid item xs={5}>
           <Item>
-            <img src="../../public/Image/plofile.jpeg" style={{ width: '80%' }}/>
+            <img src="/Image/plofile.jpeg" style={{ width: '80%' }}/>
           </Item>
         </Grid>
         <Grid item xs={7}>
