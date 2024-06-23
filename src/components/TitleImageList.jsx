@@ -27,27 +27,27 @@ export default function TitleImageList() {
 
 const itemData = [
   {
-    img: '../../public/Image/AndroidApp.jpg',
+    img: '/Image/AndroidApp.jpg',
     title: 'Androidアプリケーション',
     author: '@bkristastucchio',
   },
   {
-    img: '../../public/Image/Glasritzen-sendai_about.png',
+    img: '/Image/Glasritzen-sendai_about.png',
     title: 'Webページリニューアルのためのプロトタイプ',
     author: '@rollelflex_graphy726',
   },
   {
-    img: '../../public/Image/WeatherApp.jpg',
+    img: '/Image/WeatherApp.jpg',
     title: '天気予報Webアプリ',
     author: '@helloimnik',
   },
   {
-    img: '../../public/Image/album_desktop.png',
+    img: '/Image/album_desktop.png',
     title: 'アルバムの紹介ページ',
     author: '@nolanissac',
   },
   {
-    img: '../../public/Image/Graduation_System.jpg',
+    img: '/Image/Graduation_System.jpg',
     title: '卒業研究',
     author: '@hjrc33',
   },
