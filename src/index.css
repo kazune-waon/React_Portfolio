@@ -31,7 +31,11 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 5vw;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 3.3vw;
   line-height: 1.1;
 }
 

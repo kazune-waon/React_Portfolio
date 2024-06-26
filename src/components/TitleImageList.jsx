@@ -2,8 +2,14 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+
 
 export default function TitleImageList() {
+
+  
+
   return (
     <ImageList >
       {itemData.map((item) => (
@@ -16,7 +22,7 @@ export default function TitleImageList() {
           />
           <ImageListItemBar
             title={item.title}
-            subtitle={<span>by: {item.author}</span>}
+            subtitle={<span> {item.author}</span>}
             position="below"
           />
         </ImageListItem>
@@ -29,27 +35,27 @@ const itemData = [
   {
     img: '/Image/AndroidApp.jpg',
     title: 'Androidアプリケーション',
-    author: '@bkristastucchio',
+    author: '',
   },
   {
     img: '/Image/Glasritzen-sendai_about.png',
     title: 'Webページリニューアルのためのプロトタイプ',
-    author: '@rollelflex_graphy726',
+    author: '',
   },
   {
     img: '/Image/WeatherApp.jpg',
     title: '天気予報Webアプリ',
-    author: '@helloimnik',
+    author: '',
   },
   {
     img: '/Image/album_desktop.png',
     title: 'アルバムの紹介ページ',
-    author: '@nolanissac',
+    author: '',
   },
   {
     img: '/Image/Graduation_System.jpg',
     title: '卒業研究',
-    author: '@hjrc33',
+    // author: '',
   },
  
   
