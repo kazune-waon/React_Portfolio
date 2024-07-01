@@ -3,6 +3,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -13,15 +16,29 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BasicGrid() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+
+  let imgcols = 5; // Default for large screens
+  let introcols = 7; 
+  if (isMediumScreen) {
+    imgcols = 6;
+    introcols = 6; // For medium screens
+  } else if (isSmallScreen) {
+    imgcols = 12;
+    introcols = 12; // For small screens
+  }
+  
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={5}>
+        <Grid item xs={imgcols}>
           <Item>
             <img src="/Image/plofile-min.jpeg" style={{ width: '80%' }}/>
           </Item>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={introcols}>
           <Item>
             <html>社会人歴1年目のひよっこエンジニアです。<br/>
             大学では広く情報分野をまなび、スマホアプリのコンテストへの参加や

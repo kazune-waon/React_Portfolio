@@ -38,7 +38,10 @@ h2 {
   font-size: 3.3vw;
   line-height: 1.1;
 }
-
+h3{
+  font-size: 3vw;
+  line-height: 1.1;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
