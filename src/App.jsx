@@ -1,4 +1,10 @@
 import { useState } from 'react'
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+
+import Brightness2Icon from '@mui/icons-material/Brightness2';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+
 
 import * as React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -17,28 +23,26 @@ import CustomTabPanel from './components/CustomTabPanel'
 
 
 function App() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const[switchChecked, setSwitchChecked] = useState(false);
 
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
-
+  const toggleSwitch = () => {
+    setSwitchChecked(!switchChecked);
+  };
+ 
   return (
-    
-    <>
-    {/* <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Routes />
-    </ThemeProvider> */}
-    <CustomTabPanel />
-     
-    </>
+    <div className={switchChecked ? "darkModeMain" : "lightModeMain"}>
+      <div className='topBarContainer'>
+        <FormControlLabel
+        control={<Switch checked={switchChecked} onChange={toggleSwitch} />}
+        label={switchChecked ? <Brightness2Icon /> : <WbSunnyIcon />} />
+      </div>
+      <div className='mainContainer'>
+      <CustomTabPanel />
+      </div>
+    </div>
+  //  <>
+  //  <CustomTabPanel />
+  //  </>
   )
 }
 
