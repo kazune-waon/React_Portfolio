@@ -8,6 +8,8 @@ import BasicRating from './BackRating';
 import NoOpposite from './NoOpposite';
 import BasicGrid from './BasicGrid';
 import SkillGrid from './SkillGrid';
+import { Container } from '@mui/material';
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,12 +55,13 @@ export default function BasicTabs() {
         aria-label="basic tabs example"
         variant="fullWidth"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="HOME" {...a11yProps(0)} />
+          <Tab label="PROJECTS" {...a11yProps(1)} />
         </Tabs>
       </Box>
+
       <CustomTabPanel value={value} index={0}>
+      <Container maxwidth="sm">
       <h1>KAZUNE FUJIWARA</h1>
       <h2>ABOUT ME</h2>
       <BasicGrid />
@@ -66,15 +69,14 @@ export default function BasicTabs() {
       <SkillGrid />
       <h2>EXPERIENCE</h2>
       <NoOpposite />
+      </Container>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
       <TitleImageList />
       </CustomTabPanel>
 
-      <CustomTabPanel value={value} index={2}>
-        Item Three
-      </CustomTabPanel>
+     
     </Box>
   );
 }

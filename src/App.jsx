@@ -19,6 +19,7 @@ import TitleImageList from './components/TitleImageList'
 import BasicTimeline from './components/BasicTimeline'
 import NoOpposite from './components/NoOpposite'
 import CustomTabPanel from './components/CustomTabPanel'
+import { Container } from '@mui/material';
 
 
 
@@ -30,15 +31,20 @@ function App() {
   };
  
   return (
+
     <div className={switchChecked ? "darkModeMain" : "lightModeMain"}>
-      <div className='topBarContainer'>
-        <FormControlLabel
-        control={<Switch checked={switchChecked} onChange={toggleSwitch} />}
-        label={switchChecked ? <Brightness2Icon /> : <WbSunnyIcon />} />
-      </div>
-      <div className='mainContainer'>
-      <CustomTabPanel />
-      </div>
+     
+        <div className='topBarContainer'>
+          <FormControlLabel
+          control={<Switch checked={switchChecked} onChange={toggleSwitch} />}
+          label={switchChecked ? <Brightness2Icon /> : <WbSunnyIcon />} />
+        </div>
+        <div className='mainContainer'> 
+         
+            <CustomTabPanel />
+         
+        </div>
+      
     </div>
   //  <>
   //  <CustomTabPanel />
