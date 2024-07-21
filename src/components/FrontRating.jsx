@@ -13,7 +13,7 @@ export default function FrontRating() {
       }}
     >
 
-      <html><h3>フロントエンド</h3></html>
+<Typography variant="h3" gutterBottom>フロントエンド</Typography>
       
       <Typography component="legend">HTML/CSS</Typography>
       <Rating name="read-only" value={2} readOnly />

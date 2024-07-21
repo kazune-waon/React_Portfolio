@@ -9,7 +9,7 @@ import NoOpposite from './NoOpposite';
 import BasicGrid from './BasicGrid';
 import SkillGrid from './SkillGrid';
 import { Container } from '@mui/material';
-
+import Typography from '@mui/material/Typography';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,26 +48,30 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' , mt: -2, pt:0}}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', width:'100%' }}>
+    <Box sx={{ width: '100%' , mt: -2, pt:0, border:'none',}}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', width:'100%',
+        marginTop:-5,
+       }}>
         <Tabs value={value} 
         onChange={handleChange} 
         aria-label="basic tabs example"
         variant="fullWidth"
         >
-          <Tab label="HOME" {...a11yProps(0)} />
-          <Tab label="PROJECTS" {...a11yProps(1)} />
+          <Tab label="HOME" {...a11yProps(0)} 
+           sx={{ '&:focus': { outline: 'none' } }}/>
+          <Tab label="PROJECTS" {...a11yProps(1)} 
+            sx={{ '&:focus': { outline: 'none' } }}/>
         </Tabs>
       </Box>
 
       <CustomTabPanel value={value} index={0}>
       <Container maxwidth="sm">
-      <h1>KAZUNE FUJIWARA</h1>
-      <h2>ABOUT ME</h2>
+      <Typography variant="h1" gutterBottom>KAZUNE FUJIWARA</Typography>
+      <Typography variant= "h2" gutterBottom>ABOUT ME</Typography>
       <BasicGrid />
-      <h2>SKILL</h2>
+      <Typography variant= "h2" gutterBottom>SKILL</Typography>
       <SkillGrid />
-      <h2>EXPERIENCE</h2>
+      <Typography variant= "h2" gutterBottom>EXPERIENCE</Typography>
       <NoOpposite />
       </Container>
       </CustomTabPanel>

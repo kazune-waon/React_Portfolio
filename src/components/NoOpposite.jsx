@@ -5,6 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
 
 export default function NoOpposite() {
   return (
@@ -13,6 +14,7 @@ export default function NoOpposite() {
         [`& .${timelineItemClasses.root}:before`]: {
           flex: 0,
           padding: 0,
+          marginLeft:10,
         },
       }}
     >
@@ -21,7 +23,11 @@ export default function NoOpposite() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>株式会社メンバーズ</TimelineContent>
+        <TimelineContent>
+          <Typography variant="h5" gutterBottom>
+            株式会社メンバーズ
+          </Typography>
+          </TimelineContent>
       </TimelineItem>
       
     
@@ -31,7 +37,11 @@ export default function NoOpposite() {
         <TimelineSeparator>
           <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent>東北学院大学</TimelineContent>
+        <TimelineContent>
+         <Typography variant="h5" gutterBottom>
+          東北学院大学
+         </Typography>
+         </TimelineContent>
         
       </TimelineItem>
     </Timeline>
