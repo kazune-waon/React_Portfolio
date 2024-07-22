@@ -31,9 +31,20 @@ body {
   min-height: 100vh;
 }
 
+.darkModeMain {
+  background-color: #1a1e2e;
+  color:#e6e6e6;
+}
+
+.lightModeMain {
+  background-color: white;
+  color: #1a1e2e;
+}
+
 h1 {
   font-size: 5vw;
   line-height: 1.1;
+  color: #CA98CD;
 }
 h2 {
   font-size: 3.3vw;

@@ -14,7 +14,7 @@ export default function BackRating() {
       }}
     >
 
-<Typography variant="h3" gutterBottom>バックエンド</Typography>
+<h3>バックエンド</h3>
       
      
       

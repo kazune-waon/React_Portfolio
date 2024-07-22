@@ -15,6 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
   boxShadow: 'none',
+  background:"none",
 }));
 
 export default function BasicGrid() {
@@ -35,11 +36,11 @@ export default function BasicGrid() {
   
 
   return (
-    <Box sx={{ flexGrow: 1 ,}}>
+    <Box sx={{ flexGrow: 1 ,background:"none",}}>
      
       
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} >
         <Grid item xs={imgcols}>
           <Item>
             <img src="/Image/plofile-min.jpeg" style={{ width: '80%' }}/>
@@ -47,7 +48,8 @@ export default function BasicGrid() {
         </Grid>
         <Grid item xs={introcols} sx={{ textAlign:"left" ,}}>
           <Item>
-          <Typography variant="body2" gutterBottom sx={{ textAlign:"left" ,}}>社会人歴1年目のひよっこエンジニアです。<br/>
+          <Typography  variant='h6'
+              gutterBottom sx={{ textAlign:"left" ,}}>社会人歴1年目のひよっこエンジニアです。<br/>
             大学では広く情報分野をまなび、スマホアプリのコンテストへの参加や
             、卒業研究で絵本のシステムを制作。</Typography>
            

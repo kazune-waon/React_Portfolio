@@ -10,6 +10,8 @@ import BasicGrid from './BasicGrid';
 import SkillGrid from './SkillGrid';
 import { Container } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,6 +43,10 @@ function a11yProps(index) {
 }
 
 export default function BasicTabs() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -66,12 +72,12 @@ export default function BasicTabs() {
 
       <CustomTabPanel value={value} index={0}>
       <Container maxwidth="sm">
-      <Typography variant="h1" gutterBottom>KAZUNE FUJIWARA</Typography>
-      <Typography variant= "h2" gutterBottom>ABOUT ME</Typography>
+      <h1>KAZUNE FUJIWARA</h1>
+      <h2>ABOUT ME</h2>
       <BasicGrid />
-      <Typography variant= "h2" gutterBottom>SKILL</Typography>
+      <h2>SKILL</h2>
       <SkillGrid />
-      <Typography variant= "h2" gutterBottom>EXPERIENCE</Typography>
+      <h2>EXPERIENCE</h2>
       <NoOpposite />
       </Container>
       </CustomTabPanel>

@@ -49,15 +49,6 @@ body {
   /* padding: 2rem; */
 }
 
-.darkModeMain {
-  background-color: #1a1e2e;
-  color:#e6e6e6;
-}
-
-.lightModeMain {
-  background-color: white;
-  color: #1a1e2e;
-}
 
 .topBarContainer {
   display: flex;
@@ -73,10 +64,4 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1{
-  color: #d9aacd
-
-  ;
 }
